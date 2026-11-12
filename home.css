@@ -26,3 +26,19 @@
 .street-photo img{height:auto;aspect-ratio:3/4;object-fit:cover;object-position:center 38%}
 @media(max-width:900px){.music-photo-layout{grid-template-columns:1fr;gap:36px}.studio-photo img{aspect-ratio:16/9;object-position:center 45%}.live-photo-layout{gap:5%}.stories-photo-layout{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:5%}}
 @media(max-width:700px){.live-photo-layout,.stories-photo-layout{grid-template-columns:1fr;gap:32px}.live-photo img{aspect-ratio:4/5;object-position:center}.live-copy{grid-row:1}.street-photo{margin-top:4px}.street-photo img{aspect-ratio:4/3;object-position:center 42%}.music-list-column .release-card{grid-template-columns:56px 1fr auto;gap:14px}.music-list-column .release-art,.music-list-column .release-art img{width:56px;height:56px}.music-list-column .release-meta h3{font-size:16px}.section-photo figcaption{font-size:8px;letter-spacing:.1em;padding-top:12px}}
+
+/* Stories & Media shares the homepage's visual system. */
+.media-page .media-hero{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:8%;align-items:center;padding:75px 5%;background:#000}
+.media-page .media-hero h1{font-size:clamp(48px,6.8vw,100px)}
+.media-page .media-intro{font-size:21px;line-height:1.7;color:var(--muted);max-width:610px;margin-bottom:30px}
+.media-page .media-hero>img{width:100%;height:430px;object-position:center 35%;filter:grayscale(1)}
+.media-page .media-section-head h2{max-width:950px}
+.stories-directory{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 60px}
+.stories-directory .media-card{display:flex;flex-direction:column;align-items:start;gap:0;padding:30px 0;border-top:1px solid var(--line);border-bottom:0;min-width:0}
+.stories-directory .media-kicker{color:var(--accent);margin-bottom:14px}
+.stories-directory .media-card strong{font:800 clamp(22px,2.2vw,31px)/1.2 var(--display);letter-spacing:-.025em;text-transform:uppercase}
+.stories-directory .media-card p{display:block;font:400 17px/1.7 var(--body);color:var(--muted);margin:18px 0 24px;max-width:62ch}
+.stories-directory .media-card em{margin-top:auto;text-align:left;border-bottom:1px solid #666;padding-bottom:6px}
+.media-section--grant{background:#111}
+.media-section--reviews{background:#000}
+@media(max-width:700px){.media-page .media-hero{grid-template-columns:1fr;gap:35px;padding:45px 6%}.media-page .media-hero h1{font-size:clamp(42px,11vw,70px);overflow-wrap:normal}.media-page .media-intro{font-size:18px}.media-page .media-hero>img{height:300px}.stories-directory{grid-template-columns:1fr}.stories-directory .media-card strong{font-size:23px}.stories-directory .media-card p{font-size:16px}.media-page .media-section-head h2{font-size:30px}}
