@@ -24,3 +24,32 @@ footer{padding:80px clamp(20px,4vw,64px) 30px;background:var(--red);color:var(--
 @media(max-width:850px){.radar-head{display:block}.radar-head h2{margin-top:38px}.radar-head p{margin-top:22px}.radar-layout{grid-template-columns:1fr}.radar-copy{transform:none}.radar-collage{max-width:720px}.radar-collage figure:nth-child(n){transform:none}}
 @media(max-width:520px){.radar{padding-left:18px;padding-right:18px}.radar-head h2{font-size:24vw}.radar-layout{margin-top:50px}.radar-collage{gap:9px}.radar-collage figure{padding:4px;box-shadow:5px 5px 0 rgba(11,11,11,.16)}.radar-collage figure:nth-child(1){aspect-ratio:1}.radar-copy{padding:24px;box-shadow:8px 8px 0 var(--red)}.radar-copy h3{font-size:18vw}.radar-copy p:not(.radar-kicker){font-size:10px}.radar-actions a,.creator-links a{font-size:8px;padding:13px 12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.marquee>div{animation:none}.reveal{opacity:1;transform:none;transition:none}}
+
+/* Homepage refresh: keep the introduction and signup in the opening flow. */
+.hero{height:auto;min-height:100svh;padding:145px clamp(20px,7vw,108px) 80px}
+.hero>img{position:absolute;inset:0;object-position:center 35%}
+.hero-copy{position:relative;left:auto;right:auto;top:auto;transform:none;max-width:820px}
+.hero h1{font-size:clamp(48px,7vw,96px);line-height:.85;letter-spacing:-.04em}
+.hero h1 span{display:inline}
+.hero h1 span:nth-child(2){margin-left:.15em}
+.hero-line{display:block;margin:30px 0 0;max-width:740px}
+.hero-line h2{font:900 clamp(48px,6.5vw,88px)/.94 var(--cond);letter-spacing:-.035em;text-transform:uppercase;margin:0 0 22px;text-wrap:balance}
+.hero-line .hero-intro{font:400 clamp(12px,1.15vw,15px)/1.8 var(--mono);text-transform:none;letter-spacing:0;max-width:640px;color:var(--off)}
+.tour-update{max-width:760px;margin-top:40px;font:400 clamp(14px,1.4vw,18px)/1.8 var(--mono)}
+.tour-update p+p{color:var(--acid)}
+.footer-bottom span:first-child{display:block}
+@media(max-width:850px){.hero{padding-top:130px}.hero-shade{background:linear-gradient(90deg,rgba(4,4,4,.94),rgba(4,4,4,.65)),linear-gradient(0deg,rgba(4,4,4,.7),transparent)}.footer-bottom span:first-child{grid-column:1/-1}}
+@media(max-width:520px){.hero{height:auto;min-height:0;padding:120px 20px 65px}.hero h1{font-size:48px}.hero-line{margin-top:26px}.hero-line h2{font-size:48px}.hero-line .hero-intro{font-size:12px}.tour-head h2{font-size:21vw}}
+
+@media(max-width:520px){.hero .issue-mark,.hero .tape-two{display:none}}
+
+/* Mailing-list offer */
+.signup-offer{display:grid;grid-template-columns:160px minmax(0,1fr);gap:24px;align-items:center;margin-top:28px;padding:20px;background:var(--off);color:var(--black);border:2px solid var(--black);box-shadow:7px 7px 0 #ffda00;scroll-margin-top:24px}
+.signup-offer>img{width:100%;height:auto;aspect-ratio:1;object-fit:contain}
+.signup-copy h3{font:900 clamp(32px,3.5vw,48px)/1 var(--cond);text-transform:uppercase;letter-spacing:-.025em;margin:0 0 10px}
+.hero-line .signup-copy p{font:400 12px/1.6 var(--mono);color:var(--black);text-transform:none;letter-spacing:0;margin:0 0 16px}
+.hero-line .signup-button{display:inline-flex;align-items:center;justify-content:space-between;gap:20px;background:var(--black);color:#ffda00;padding:16px 18px;min-height:48px;font:700 11px/1.4 var(--mono);text-transform:uppercase;box-shadow:none;transform:none}
+.hero-line .signup-button:hover{background:#ffda00;color:var(--black);transform:none}
+.signup-button:focus-visible,.listen-pill:focus-visible{outline:3px solid var(--red);outline-offset:4px}
+@media(max-width:520px){.signup-offer{grid-template-columns:95px minmax(0,1fr);gap:15px;padding:15px;margin-top:24px}.signup-copy h3{font-size:30px}.hero-line .signup-copy p{font-size:11px}.hero-line .signup-button{font-size:10px;padding:12px;gap:10px}.signup-offer>img{align-self:start}.hero .sticker{margin-bottom:20px}.hero-line h2{font-size:42px}}
+@media(max-width:360px){.signup-offer{grid-template-columns:70px minmax(0,1fr);gap:12px}.signup-copy h3{font-size:27px}}
